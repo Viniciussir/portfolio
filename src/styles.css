@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* Base: Branco (#FFFFFF), Cinza Claro (#F5F5F5), Cinza Escuro (#333333) */
+/* Destaques: Azul Marinho (#003366), Azul Claro (#0099FF) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
