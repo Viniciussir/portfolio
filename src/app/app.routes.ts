@@ -13,23 +13,28 @@ export const routes: Routes = [
     },
     { 
         path: 'home',
-        component: HomeComponent 
+        component: HomeComponent,
+        title: 'Vinicius Scampini'
     },
     { 
         path: 'about', 
-        component: AboutComponent 
+        component: AboutComponent ,
+        title: 'Sobre o Vinicius'
     },
     { 
         path: 'experience', 
-        component: ExperienceComponent 
+        component: ExperienceComponent ,
+        title: 'Experiência profissional'
     },
     { 
         path: 'projects', 
-        component: ProjectsComponent 
+        component: ProjectsComponent ,
+        title: 'Projetos realizados'
     },
     { 
         path: 'contact', 
-        component: ContactComponent 
+        component: ContactComponent ,
+        title: 'Entre em Contato'
     },
     {
         path: '**',

@@ -1,25 +1,29 @@
 <header class="header">
 
-    <a class="home" routerLink="/home">
-        <img src="img/icon-code.png" alt="icon code">
-        <span>Vinicius.dev</span>
-    </a>
+    <div class="home">
+        <a routerLink="/home" routerLinkActive="active-page">
+            <div class="icon code"></div>
+            <span>Vinicius.dev</span>
+        </a>
+    </div>
 
     <div class="menu">
-        <a routerLink="/about">
-            <img src="img/icon-about.png" alt="icon about">
+
+        <a routerLink="/about" routerLinkActive="active-page">
+            <div class="icon about"></div>
             <span>Sobre</span>
         </a>
-        <a routerLink="/experience">
-            <img src="img/icon-experience.png" alt="icon experience">
+
+        <a routerLinkActive="active-page" routerLink="/experience">
+            <div class="icon experience"></div>
             <span>Experiência</span>
         </a>
-        <a routerLink="/projects">
-            <img src="img/icon-projects.png" alt="icon projects">
+        <a routerLinkActive="active-page" routerLink="/projects">
+            <div class="icon projects"></div>
             <span>Projetos</span>
         </a>
-        <a routerLink="/contact">
-            <img src="img/icon-contact.png" alt="icon contact">
+        <a routerLinkActive="active-page" routerLink="/contact">
+            <div class="icon contact"></div>
             <span>Contato</span>
         </a>
     </div>
