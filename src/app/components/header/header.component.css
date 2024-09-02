@@ -1,9 +1,15 @@
 header {
     display: flex;
-    justify-content:space-around;
-    background-color: #1c7ee0;
+    justify-content: space-around;
+    background-color: #003366;
     color: #fff;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .home {
@@ -55,8 +61,8 @@ header {
         }
     }
 
-    .active-page span{
-        color: #a4d484
+    .active-page span {
+        color: #a4d484;
     }
 }
 
@@ -121,7 +127,6 @@ header {
         background-image: url('../../../../public/img/icon-contact-select.png');
     }
     
-
     span {
         color: #fff;
         font-family: 'Oswald', sans-serif;
@@ -134,10 +139,9 @@ header {
         }
     }
 
-    .active-page span{
-        color: #a4d484
+    .active-page span {
+        color: #a4d484;
     }
-  
 }
 
 .language {
@@ -158,4 +162,9 @@ header {
             transition: transform 0.3s ease-in-out;
         }
     }
+}
+
+/* Adicionando padding ao conteúdo principal para evitar sobreposição */
+main {
+    padding-top: 4rem; /* Ajuste a altura de acordo com a altura do cabeçalho */
 }

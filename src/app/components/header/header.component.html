@@ -1,36 +1,36 @@
 <header class="header">
 
     <div class="home">
-        <a routerLink="/home" routerLinkActive="active-page">
-            <div class="icon code"></div>
-            <span>Vinicius.dev</span>
-        </a>
+      <a routerLink="/home" routerLinkActive="active-page" (click)="scrollTo('home')">
+        <div class="icon code"></div>
+        <span>Vinicius.dev</span>
+      </a>
     </div>
-
+  
     <div class="menu">
 
-        <a routerLink="/about" routerLinkActive="active-page">
-            <div class="icon about"></div>
-            <span>Sobre</span>
-        </a>
-
-        <a routerLinkActive="active-page" routerLink="/experience">
-            <div class="icon experience"></div>
-            <span>Experiência</span>
-        </a>
-        <a routerLinkActive="active-page" routerLink="/projects">
-            <div class="icon projects"></div>
-            <span>Projetos</span>
-        </a>
-        <a routerLinkActive="active-page" routerLink="/contact">
-            <div class="icon contact"></div>
-            <span>Contato</span>
-        </a>
+      <a routerLink="/about" routerLinkActive="active-page" (click)="scrollTo('about')">
+        <div class="icon about"></div>
+        <span>Sobre</span>
+      </a>
+  
+      <a routerLink="/experience" routerLinkActive="active-page" (click)="scrollTo('experience')">
+        <div class="icon experience"></div>
+        <span>Experiência</span>
+      </a>
+      <a routerLink="/projects" routerLinkActive="active-page" (click)="scrollTo('projects')">
+        <div class="icon projects"></div>
+        <span>Projetos</span>
+      </a>  
+      <a routerLink="/contact" routerLinkActive="active-page" (click)="scrollTo('contact')">
+        <div class="icon contact"></div>
+        <span>Contato</span>
+      </a>
     </div>
-
+  
     <div class="language">
-        <span>PT</span>
+      <span>PT</span>
     </div>
-
-</header>
+    
+  </header>
   
