@@ -27,10 +27,14 @@
         <span>Contato</span>
       </a>
     </div>
-  
-    <div class="language">
-      <span>PT</span>
-    </div>
-    
-  </header>
+
+    <button class="menu-mobile" (click)="clickMenuMobile()" aria-label="Abrir menu mobile">
+      <img [src]="iconMobile" alt="Menu Icon"/>
+    </button>
+
+    <app-header-mobile
+      *ngIf="isMobile">
+    </app-header-mobile>
+
+</header>
   

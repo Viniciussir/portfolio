@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,16 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
     CommonModule, 
     RouterLink, 
     RouterOutlet,
-    RouterLinkActive
+    RouterLinkActive,
+    HeaderMobileComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  isMobile: boolean = false;
+  iconMobile:string = 'img/icon-menu-mobile.png';
 
   constructor(private router: Router) {}
 
@@ -27,6 +32,15 @@ export class HeaderComponent {
         }
       }, 100);
     });
+  }
+
+  clickMenuMobile(): void {
+    this.isMobile = !this.isMobile;
+    if(this.isMobile){
+      this.iconMobile = 'img/icon-close.png';
+    } else {
+      this.iconMobile = 'img/icon-menu-mobile.png';
+    }
   }
 
 }

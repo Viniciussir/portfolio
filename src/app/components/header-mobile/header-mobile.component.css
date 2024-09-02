@@ -1,0 +1,72 @@
+.header-mobile {
+
+    flex: 1 100%;
+
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: #fff;
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    .about {
+        background-image: url('../../../../public/img/icon-about.png');
+    }
+    
+    .active-page .about {
+        background-image: url('../../../../public/img/icon-about-select.png');
+    }
+
+    .experience {
+        background-image: url('../../../../public/img/icon-experience.png');
+    }
+    
+    .active-page .experience {
+        background-image: url('../../../../public/img/icon-experience-select.png');
+    }
+
+    .projects {
+        background-image: url('../../../../public/img/icon-projects.png');
+    }
+    
+    .active-page .projects {
+        background-image: url('../../../../public/img/icon-projects-select.png');
+    }
+
+    .contact {
+        background-image: url('../../../../public/img/icon-contact.png');
+    }
+    
+    .active-page .contact {
+        background-image: url('../../../../public/img/icon-contact-select.png');
+    }
+    
+    span {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 800;
+        font-size: 0.875rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
+    .active-page span {
+        color: #a4d484;
+    }
+}
