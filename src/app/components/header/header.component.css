@@ -47,7 +47,7 @@ header {
     }
 
     span {
-        font-family: cursive;
+        font-family: 'Oswald', sans-serif;
         color: #C0C0C0;
         font-weight: 1000;
         font-size: 20px;
@@ -121,7 +121,7 @@ header {
     }
     
     span {
-        font-family: cursive;
+        font-family: 'Oswald', sans-serif;
         font-weight: 1000;
         font-size: 18px;
         color: #C0C0C0;
@@ -157,7 +157,19 @@ main {
     padding-top: 4rem; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    
+    .menu {
+        gap: 4rem;
+
+        span {
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 426px) {
 
     .header {
         flex-wrap: wrap;
