@@ -1,0 +1,62 @@
+@keyframes typing1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 16ch;
+    }
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes typing3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26ch;
+    }
+}
+
+@keyframes hideCursor1 {
+    from {
+        border-color: rgba(0, 0, 0, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+@keyframes hideCursor2 {
+    from {
+        border-color: rgba(0, 0, 0, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes hideCursor3 {
+    from {
+        border-color: rgba(0, 0, 0, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

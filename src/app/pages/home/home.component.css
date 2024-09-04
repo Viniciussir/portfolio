@@ -1,11 +1,89 @@
-.home {
+@import url('../../animations.css');
+
+.container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 92vh;
+    background-color: #f5f5f5;
 }
 
-.home-img img {
-    width: 20rem;
-    height: 20rem;
+.text-content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 25px;
+    border-right: 4px solid rgba(0, 0, 0, 0.75);
+    width: 16ch;
+    white-space: nowrap;
+    color: #003366;
+    overflow: hidden;
+    animation: typing1 0.5s steps(25, end), hideCursor1 0.25s 0.75s forwards; 
+}
+
+.name {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 35px;
+    border-right: 4px solid rgba(0, 0, 0, 0.75);
+    width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    color: #003366;
+    animation: fadeIn 0.5s 0.75s forwards, typing2 1s steps(25, end) 0.75s forwards, hideCursor2 0.25s 1.75s forwards; 
+}
+
+.role {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 25px;
+    border-right: 4px solid rgba(0, 0, 0, 0.75);
+    width: 26ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #003366;
+    opacity: 0;
+    animation: fadeIn 0.5s 1.75s forwards, typing3 1.5s steps(26, end) 1.75s forwards, hideCursor3 0.25s 3.25s forwards; 
+}
+
+.profile-img img {
+    height: 50vh;
+}
+
+.download-cv {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    gap: 0.5rem;
+    background-color: #003366;
+    color: white;  
+}
+  
+.download-cv:hover {
+    background-color: #005399;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-download {
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../../public/img/icon-download.png');
 }
