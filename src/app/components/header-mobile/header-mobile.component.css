@@ -1,6 +1,7 @@
 .header-mobile {
 
     flex: 1 100%;
+    margin-top: 1rem;
 
     a {
         display: flex;
@@ -8,7 +9,6 @@
         flex-direction: column;
         padding: 0.5rem;
         text-decoration: none;
-        color: #fff;
 
         .icon {
             width: 2rem;
@@ -28,7 +28,7 @@
     }
     
     .active-page .about {
-        background-image: url('../../../../public/img/icon-about-select.png');
+        background-image: url('../../../../public/img/icon-about-black.png');
     }
 
     .experience {
@@ -36,15 +36,15 @@
     }
     
     .active-page .experience {
-        background-image: url('../../../../public/img/icon-experience-select.png');
+        background-image: url('../../../../public/img/icon-experience-black.png');
     }
 
     .projects {
-        background-image: url('../../../../public/img/icon-projects.png');
+        background-image: url('../../../../public/img/icon-project.png');
     }
     
     .active-page .projects {
-        background-image: url('../../../../public/img/icon-projects-select.png');
+        background-image: url('../../../../public/img/icon-project-black.png');
     }
 
     .contact {
@@ -52,13 +52,14 @@
     }
     
     .active-page .contact {
-        background-image: url('../../../../public/img/icon-contact-select.png');
+        background-image: url('../../../../public/img/icon-contact-black.png');
     }
     
     span {
         font-family: 'Oswald', sans-serif;
         font-weight: 800;
         font-size: 0.875rem;
+        color: #C0C0C0;
 
         &:hover {
             transform: scale(1.1);
@@ -67,6 +68,6 @@
     }
 
     .active-page span {
-        color: #a4d484;
+        color: #000000;
     }
 }

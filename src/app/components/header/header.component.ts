@@ -37,7 +37,7 @@ export class HeaderComponent {
   clickMenuMobile(): void {
     this.isMobile = !this.isMobile;
     if(this.isMobile){
-      this.iconMobile = 'img/icon-close.png';
+      this.iconMobile = 'img/icon-menu-close.png';
     } else {
       this.iconMobile = 'img/icon-menu-mobile.png';
     }

@@ -2,8 +2,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #003366;
-    color: #fff;
+    background-color: #fff;
     padding: 1rem;
     position: fixed;
     top: 0;
@@ -25,7 +24,6 @@ header {
         align-items: center;
         gap: 0.5rem;
         text-decoration: none;
-        color: #fff;
         
         .icon {
             width: 2rem;
@@ -45,14 +43,14 @@ header {
     }
     
     .active-page .code {
-        background-image: url('../../../../public/img/icon-code-select.png');
+        background-image: url('../../../../public/img/icon-code-black.png');
     }
 
     span {
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 800;
-        font-size: 0.875rem;
+        font-family: cursive;
+        color: #C0C0C0;
+        font-weight: 1000;
+        font-size: 20px;
 
         &:hover {
             transform: scale(1.1);
@@ -61,7 +59,7 @@ header {
     }
 
     .active-page span {
-        color: #a4d484;
+        color: #000000;
     }
 }
 
@@ -76,7 +74,6 @@ header {
         align-items: center;
         gap: 0.5rem;
         text-decoration: none;
-        color: #fff;
 
         .icon {
             width: 2rem;
@@ -96,7 +93,7 @@ header {
     }
     
     .active-page .about {
-        background-image: url('../../../../public/img/icon-about-select.png');
+        background-image: url('../../../../public/img/icon-about-black.png');
     }
 
     .experience {
@@ -104,15 +101,15 @@ header {
     }
     
     .active-page .experience {
-        background-image: url('../../../../public/img/icon-experience-select.png');
+        background-image: url('../../../../public/img/icon-experience-black.png');
     }
 
     .projects {
-        background-image: url('../../../../public/img/icon-projects.png');
+        background-image: url('../../../../public/img/icon-project.png');
     }
     
     .active-page .projects {
-        background-image: url('../../../../public/img/icon-projects-select.png');
+        background-image: url('../../../../public/img/icon-project-black.png');
     }
 
     .contact {
@@ -120,13 +117,14 @@ header {
     }
     
     .active-page .contact {
-        background-image: url('../../../../public/img/icon-contact-select.png');
+        background-image: url('../../../../public/img/icon-contact-black.png');
     }
     
     span {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 800;
-        font-size: 0.875rem;
+        font-family: cursive;
+        font-weight: 1000;
+        font-size: 18px;
+        color: #C0C0C0;
 
         &:hover {
             transform: scale(1.1);
@@ -135,7 +133,7 @@ header {
     }
 
     .active-page span {
-        color: #a4d484;
+        color: #000000;
     }
 }
 
