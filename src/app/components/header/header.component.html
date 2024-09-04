@@ -29,7 +29,8 @@
     </div>
 
     <button class="menu-mobile" (click)="clickMenuMobile()" aria-label="Abrir menu mobile">
-      <img [src]="iconMobile" alt="Menu Icon"/>
+      <img *ngIf="isMobile" src="img/icon-menu-close.png" alt="Menu Icon"/>
+      <img *ngIf="!isMobile" src="img/icon-menu-mobile.png" alt="Menu Icon"/>
     </button>
 
     <app-header-mobile

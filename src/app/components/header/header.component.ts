@@ -19,7 +19,6 @@ import { HeaderMobileComponent } from '../header-mobile/header-mobile.component'
 export class HeaderComponent {
 
   isMobile: boolean = false;
-  iconMobile:string = '/img/icon-menu-mobile.png';
 
   constructor(private router: Router) {}
 
@@ -36,11 +35,6 @@ export class HeaderComponent {
 
   clickMenuMobile(): void {
     this.isMobile = !this.isMobile;
-    if(this.isMobile){
-      this.iconMobile = '/img/icon-menu-close.png';
-    } else {
-      this.iconMobile = '/img/icon-menu-mobile.png';
-    }
   }
 
 }
