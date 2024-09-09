@@ -9,7 +9,19 @@
   color: #000000;
 
   h1 {
-    font-size: 3rem;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 40px;
+    border-right: 4px solid rgba(0, 0, 0, 0.75);
+    width: 19ch;
+    white-space: nowrap;
+    color: #000000;
+    overflow: hidden;
+    animation: typing1 2s steps(20, end), hideCursor1 0.25s 2s forwards;
+
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -19,7 +31,20 @@
   align-items: center;
 
   p {
-    font-size: 1.5rem;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 35px;
+    border-right: 4px solid rgba(0, 0, 0, 0.75);
+    width: 16ch;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    color: #000000;
+    animation: fadeIn 0.5s 2.25s forwards, typing2 2s steps(20, end) 2.25s forwards, hideCursor2 0.25s 4.25s forwards;
+
+    @media (max-width: 900px) {
+      font-size: 25px;
+    }
   }
 
   a {
@@ -28,4 +53,29 @@
     align-items: center;
     text-decoration: none;
   }
+}
+
+@keyframes typing1 {
+  from { width: 0; }
+  to { width: 19ch; }
+}
+
+@keyframes hideCursor1 {
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes typing2 {
+  from { width: 0; }
+  to { width: 16ch; }
+}
+
+@keyframes hideCursor2 {
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
 }
