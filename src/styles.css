@@ -13,3 +13,8 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #003366 #ffffff;
+}
