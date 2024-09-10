@@ -65,11 +65,11 @@
 .profile-img img {
     height: 50vh;
     border-radius: 100px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
   
 .profile-img img:hover {
-    transform: translateY(-10px);
+    transform: translateY(-25px);
 }
   
 .download-cv {
