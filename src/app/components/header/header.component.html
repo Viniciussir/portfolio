@@ -1,42 +1,58 @@
-<header class="header">
+<header>
 
-    <div class="home">
-      <a routerLink="/home" routerLinkActive="active-page" (click)="scrollTo('home')">
-        <div class="icon code"></div>
-        <span>Vinicius.dev</span>
-      </a>
-    </div>
-  
-    <div class="menu">
+  <div class="home">
 
-      <a routerLink="/about" routerLinkActive="active-page" (click)="scrollTo('about')">
-        <div class="icon about"></div>
-        <span>Sobre</span>
-      </a>
-  
-      <a routerLink="/experience" routerLinkActive="active-page" (click)="scrollTo('experience')">
-        <div class="icon experience"></div>
-        <span>Experiência</span>
-      </a>
-      <a routerLink="/projects" routerLinkActive="active-page" (click)="scrollTo('projects')">
-        <div class="icon projects"></div>
-        <span>Projetos</span>
-      </a>  
-      <a routerLink="/contact" routerLinkActive="active-page" (click)="scrollTo('contact')">
-        <div class="icon contact"></div>
-        <span>Contato</span>
-      </a>
-      
-    </div>
-
-    <button class="menu-mobile" (click)="clickMenuMobile()" aria-label="Abrir menu mobile">
-      <img *ngIf="isMobile" src="img/icon-menu-close.png" alt="Menu Icon"/>
-      <img *ngIf="!isMobile" src="img/icon-menu-mobile.png" alt="Menu Icon"/>
+    <button class="icon-button" (click)="toggleMenu()">
+      <img src="img/header/icon-home.png" alt="Home Icon">
     </button>
+  
+    <span class="vertical-text">Software Engineer</span>
 
-    <app-header-mobile
-      *ngIf="isMobile">
-    </app-header-mobile>
+    <span class="vertical-text">{{ currentDate | date: 'dd/MM' }}</span>
+
+    <div class="hiperlink">
+      <a href="https://github.com/Viniciussir" target="_blank" rel="noopener noreferrer">
+        <img src="img/header\icon-github.png" alt="Home Icon">
+      </a>
+  
+      <a href="https://www.linkedin.com/in/viniciusscampini/" target="_blank" rel="noopener noreferrer">
+        <img src="img/header\icon-linkedin.png" alt="Home Icon">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="menu" [class.active]="menuOpen" #menu>
+
+    <a>
+      <img src="img/header\icon-about.png" alt="Home Icon">
+      <span>Sobre</span>
+    </a>
+
+    <a>
+      <img src="img/header\icon-experience.png" alt="Home Icon">
+      <span>Experiência</span>
+    </a>
+    <a>
+      <img src="img/header\icon-project.png" alt="Home Icon">
+      <span>Projetos</span>
+    </a>  
+    <a>
+      <img src="img/header\icon-contact.png" alt="Home Icon">
+      <span>Contato</span>
+    </a>
+
+    <div class="identity">
+      <img src="img/header\icon-code-white.png" alt="Home Icon">
+      <span>Vinicius.dev</span>
+    </div>
+    
+  </div>
+
+  <div class="site-identity" [ngClass]="{'hidden': menuOpen}">
+    <img src="img/header\icon-code-black.png" alt="Home Icon">
+    <span>Vinicius.dev</span>
+  </div>
 
 </header>
   

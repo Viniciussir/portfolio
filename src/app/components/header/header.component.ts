@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
 
 @Component({
   selector: 'app-header',
@@ -10,31 +9,39 @@ import { HeaderMobileComponent } from '../header-mobile/header-mobile.component'
     CommonModule, 
     RouterLink, 
     RouterOutlet,
-    RouterLinkActive,
-    HeaderMobileComponent
+    RouterLinkActive
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 
-  isMobile: boolean = false;
+  @ViewChild('menu') menu!: ElementRef;
+
+  currentDate: Date = new Date();
+
+  menuOpen:boolean = false;
 
   constructor(private router: Router) {}
 
-  scrollTo(sectionId: string) {
-    this.router.navigate([`/${sectionId}`]).then(() => {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    });
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 
-  clickMenuMobile(): void {
-    this.isMobile = !this.isMobile;
+  @HostListener('document:click', ['$event'])
+  clickOutside(event: MouseEvent) {
+    const clickedInside = this.menu.nativeElement.contains(event.target);
+    const clickedOnToggle = (event.target as HTMLElement).closest('.icon-button');
+    if (!clickedInside && this.menuOpen && !clickedOnToggle) {
+      this.menuOpen = false;
+    }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    if (this.menuOpen) {
+      this.menuOpen = false;
+    }
   }
 
 }
