@@ -16,3 +16,9 @@ html, body {
     scrollbar-width: thin; 
     scrollbar-color: #000000 #ffffff;
 }
+
+:root {
+    --color-main: #ffffff;
+    --color-secondary: #000000;
+    --color-style: #000000;
+}
