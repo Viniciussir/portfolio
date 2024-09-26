@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000000;
+    background-color: #1a1a1a;
     position: fixed;
     top: 0; 
     left: 0;
@@ -33,6 +33,8 @@ img {
     }
     
     .vertical-text {
+        display: flex;
+        align-items: center;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         font-family: 'Oswald', sans-serif;
@@ -108,5 +110,9 @@ img {
 
 .hidden {
     display: none;
+}
+
+.gap{
+    gap: .5rem;
 }
 

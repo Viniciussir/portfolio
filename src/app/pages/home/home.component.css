@@ -18,48 +18,47 @@
 .text-content {
     display: flex;
     flex-direction: column;
-    width: 400px;
     height: 400px;
-    align-items: center;
+    width: 600px;
     justify-content: center;
 }
 
 .greeting {
     display: inline-block;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 40px;
     border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 16ch;
+    width: 4ch;  
     white-space: nowrap;
     color: #000000;
     overflow: hidden;
-    animation: typing1 0.5s steps(25, end), hideCursor1 0.25s 0.75s forwards; 
+    animation: typing1 1s steps(4, end), hideCursor1 0.25s 1s forwards; 
 }
 
 .name {
     display: inline-block;
     font-family: monospace;
-    font-size: 35px;
+    font-size: 40px;
     border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 25ch;
+    width: 20ch;  
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
     color: #000000;
-    animation: fadeIn 0.5s 0.75s forwards, typing2 1s steps(25, end) 0.75s forwards, hideCursor2 0.25s 1.75s forwards; 
+    animation: fadeIn 0.5s 1.25s forwards, typing2 2s steps(20, end) 1.25s forwards, hideCursor2 0.25s 3.25s forwards; 
 }
 
 .role {
     display: inline-block;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 40px;
     border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 26ch;
+    width: 25ch;
     white-space: nowrap;
     overflow: hidden;
     color: #000000;
     opacity: 0;
-    animation: fadeIn 0.5s 1.75s forwards, typing3 1.5s steps(26, end) 1.75s forwards, hideCursor3 0.25s 3.25s forwards; 
+    animation: fadeIn 0.5s 3.5s forwards, typing3 2.5s steps(25, end) 3.5s forwards, hideCursor3 0.25s 6s forwards; 
 }
 
 .profile-img img {
@@ -75,9 +74,12 @@
 .download-cv {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
+    width: 200px;
+    height: 50px;
     padding: 15px 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
     font-family: monospace;
@@ -88,8 +90,6 @@
   
 .download-cv:hover {
     background-color: #000000;
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
 }
 
 .icon-download {
