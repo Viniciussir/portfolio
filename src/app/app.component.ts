@@ -7,6 +7,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { VerticalSpacerComponent } from './components/vertical-spacer/vertical-spacer.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    VerticalSpacerComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
