@@ -2,11 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
 }
   
 .vertical-line {
     width: 2px;
     height: 200px; 
     background-color: var(--color-secondary) 
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
   
