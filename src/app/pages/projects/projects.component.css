@@ -1,0 +1,17 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.img {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.text {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}

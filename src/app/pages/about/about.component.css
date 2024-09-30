@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-main);
+  background-color: #eeeeee;
   height: 100vh;
 
   @media (max-width: 600px) {
