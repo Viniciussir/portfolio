@@ -116,3 +116,19 @@ img {
     gap: .5rem;
 }
 
+@media (max-width: 768px){
+    
+    header {
+        width: 40px;
+    }
+    
+}
+
+@media (max-width: 426px) {
+
+    header {
+        width: 30px;
+    }
+
+}
+
