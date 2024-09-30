@@ -2,15 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .info-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 100px;
-  gap: 100px;
+  margin-bottom: 50px;
+  gap: 70px;
 }
   
 .info-text-right {
@@ -18,8 +17,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 350px;
-  gap: 50px;
+  width: 400px;
+  height: 150px;
   border-right: 2px solid black;
 }
 
@@ -28,8 +27,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
-  gap: 50px;
+  width: 400px;
+  height: 150px;
   border-left: 2px solid black;
 }
 
@@ -56,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 550px;
   height: 5px;
   background-color: black;
 }

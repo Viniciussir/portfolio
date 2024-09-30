@@ -17,11 +17,14 @@ import { StructuredBoxComponent } from "../../components/structured-box/structur
 export class AboutComponent {
 
   infoTextOne: string = 'Vinicius Coelho Scampini';
-  verticalTextOne: string = 'V';
+  verticalTextOne: string = '1';
 
-  infoTextTwo: string = '24 anos';
-  verticalTextTwo: string = 'C';
+  infoTextTwo: string = 'Pós-Graduação Eng. Software - PUC';
+  verticalTextTwo: string = '2';
 
-  infoTextThree: string = 'Pós-Graduação Eng. Software - PUC';
-  verticalTextThree: string = 'S';
+  infoTextThree: string = 'Bacharel em Eng. Computação - São Judas';
+  verticalTextThree: string = '3';
+
+  infoTextFour: string = 'Português Nativo | Inglês  Intermediario';
+  verticalTextFour: string = '4';
 }
