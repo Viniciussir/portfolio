@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './vertical-spacer.component.css'
 })
 export class VerticalSpacerComponent {
-  @Input() text: string = 'Sobre min'; 
+  @Input() verticaltext: string = ''; 
 }
