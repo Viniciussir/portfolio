@@ -1,39 +1,23 @@
 <div class="container">
-    <div class="content">
 
-        <div class="box">
-            <div class="box-text">
-                <span>Vinicius Coelho Scampini</span>
-                <span>24 anos</span>
-            </div>
-            <span class="vertical-text">V</span>
-            <div class="box-line">
-                <div class="line"></div>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="box-line">
-                <div class="line"></div>
-            </div>
-            <span class="vertical-text">C</span>
-            <div class="box-text">
-                <span>Engenhearia da Computação - Univerdade São Judas</span>
-            </div>
-        </div>
+    <app-structured-box
+        [infoText]="infoTextOne"
+        [verticalText]="verticalTextOne"
+        [infoLineHorizontal]="true">
+    </app-structured-box>
 
-        <div class="box">
-            <div class="box-text">
-                <span>Engenhearia de Software - Pontifícia Universidade Católica (Puc)</span>
-            </div>
-            <span class="vertical-text">S</span>
-            <div class="box-line">
-                <div class="line"></div>
-            </div>
-          
-        </div>
+    <app-structured-box
+        [infoText]="infoTextTwo"
+        [verticalText]="verticalTextTwo"
+        [infoLineHorizontal]="false">
+    </app-structured-box>
 
-    </div>
+    <app-structured-box
+        [infoText]="infoTextThree"
+        [verticalText]="verticalTextThree"
+        [infoLineHorizontal]="true">
+    </app-structured-box>
   
 </div>
 
