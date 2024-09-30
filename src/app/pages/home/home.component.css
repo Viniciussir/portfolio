@@ -47,7 +47,13 @@
     opacity: 0;
     color: var(--color-secondary);
     animation: fadeIn 0.5s 1.25s forwards, typing2 2s steps(20, end) 1.25s forwards, hideCursor2 0.25s 3.25s forwards; 
-}
+
+    .highlight {
+        font-weight: bold;
+        /* color: #ebee3a;  */
+        color: #003366; 
+    }
+}  
 
 .role {
     display: inline-block;
