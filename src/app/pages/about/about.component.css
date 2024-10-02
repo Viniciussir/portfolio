@@ -4,39 +4,4 @@
   flex-direction: column;
   justify-content: center;
   background-color: #eeeeee;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
-.tecnologias{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.title-tecnologia{
-  padding: 25px;
-  font-size: 40px;
-  font-family: monospace;
-  background-color: var(--color-main);
-}
-
-.box-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  justify-items: center;
-  padding: 20px;
-
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr); 
-  }
 }

@@ -21,15 +21,21 @@ export class AboutComponent {
   infoTextOne: string = 'Vinicius Coelho Scampini';
   verticalTextOne: string = '1';
 
-  infoTextTwo: string = 'Pós-Graduação Eng. Software - PUC';
+  infoTextTwo: string = 'Frontend | Angular | React | TypeScript';
   verticalTextTwo: string = '2';
 
-  infoTextThree: string = 'Bacharel em Eng. Computação - São Judas';
+  infoTextThree: string = 'Backend | Nest.js | Node.js';
   verticalTextThree: string = '3';
 
-  infoTextFour: string = 'Português Nativo | Inglês  Intermediario';
+  infoTextFour:  string = 'Banco de Dados | PostgreSQL | Prisma';
   verticalTextFour: string = '4';
 
-  infoTextFive: string = 'Soft skills';
+  infoTextFive: string = 'Infraestrutura | AWS (EC2, RDS, S3)';
   verticalTextFive: string = '5';
+
+  infoTextSix: string = 'Pós-Graduação Eng. Software - PUC';
+  verticalTextSix: string = '6';
+
+  infoTextSeven: string = 'Bacharel em Eng. Computação - São Judas';
+  verticalTextSeven: string = '7';
 }
