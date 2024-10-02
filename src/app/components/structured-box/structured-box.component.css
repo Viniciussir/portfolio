@@ -1,7 +1,29 @@
-.content-container{
+.content-container-right{
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content-container-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content-container-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translate(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content-container-left.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .info-box {

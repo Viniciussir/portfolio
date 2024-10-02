@@ -1,4 +1,4 @@
-<div *ngIf="infoLineHorizontal" class="content-container">
+<div *ngIf="infoLineHorizontal" class="content-container-right" [ngClass]="{'visible': isVisible}">
     <div class="info-box">
         <div class="info-text-right">
             <span class="infoText"> {{ infoText }} </span>
@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div *ngIf="!infoLineHorizontal" class="content-container">
+<div *ngIf="!infoLineHorizontal" class="content-container-left" [ngClass]="{'visible': isVisible}">
     <div class="info-box">
         <div class="line-container">
             <div class="horizontal-line"></div>

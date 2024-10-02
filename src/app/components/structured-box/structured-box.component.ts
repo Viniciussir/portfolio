@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, input } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-structured-box',
@@ -16,4 +16,19 @@ export class StructuredBoxComponent {
   @Input() verticalText: string = '';
   @Input() infoLineHorizontal: boolean = true;
 
+  public isVisible = false;
+
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      this.isVisible = true;
+    } else {
+      this.isVisible = false;
+    }
+  }
 }
