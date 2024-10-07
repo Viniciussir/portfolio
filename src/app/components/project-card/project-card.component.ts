@@ -15,5 +15,5 @@ export class ProjectCardComponent {
   @Input() deployLink: string = 'https://deploy-link.com';
   @Input() githubLink: string = 'https://github.com/project1';
   @Input() imageUrl: string = 'img/projects/icon-portfolio.png';
-  @Input() tags: string[] = []; 
+  @Input() tags: { name: string; color: string }[] = [];
 }

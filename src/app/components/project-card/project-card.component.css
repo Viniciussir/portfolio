@@ -60,15 +60,27 @@
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
 .project-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     background-color: #ffffff;
-    color: #000000; 
+    color: black;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.875rem;
     margin: 10px 0;
     border: 1px solid #ccc;
 }
+
+.tag-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
   
