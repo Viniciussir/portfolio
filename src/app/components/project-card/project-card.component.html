@@ -2,6 +2,9 @@
   <img [src]="imageUrl" [alt]="projectTitle">
   <div class="project-info">
     <h3>{{ projectTitle }}</h3>
+    <div class="project-tags">
+      <span *ngFor="let tag of tags" class="project-tag">{{ tag }}</span>
+    </div>
     <div class="project-buttons">
       <a [href]="deployLink" target="_blank" class="btn-deploy">Deploy</a>
       <a [href]="githubLink" target="_blank" class="btn-github">GitHub</a>
