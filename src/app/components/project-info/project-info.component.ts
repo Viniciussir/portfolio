@@ -11,7 +11,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project-info.component.css'
 })
 export class ProjectInfoComponent {
-  @Input() projectTitle: string = 'Projeto 1';
+  @Input() projectTitle: string = '';
+  @Input() projectDescription: string = '';
   @Input() deployLink: string = 'https://deploy-link.com';
   @Input() githubLink: string = 'https://github.com/project1';
   @Input() tags: { name: string; color: string }[] = [];

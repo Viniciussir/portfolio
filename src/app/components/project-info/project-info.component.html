@@ -1,5 +1,7 @@
 <div class="project-info">
-  <h3>{{ projectTitle }}</h3>
+  <h1>{{ projectTitle }}</h1>
+  <h2 class="project-subtitle">Descrição do Projeto</h2>
+  <label>{{ projectDescription }}</label>
   <div class="project-tags">
     <span *ngFor="let tag of tags" class="project-tag">
       <span class="tag-dot" [ngStyle]="{ 'background-color': tag.color }"></span>
@@ -11,4 +13,3 @@
     <a *ngIf="githubLink" [href]="githubLink" target="_blank" class="btn-github">GitHub</a>
   </div>
 </div>
-  
