@@ -11,9 +11,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project-card.component.css'
 })
 export class ProjectCardComponent {
-  @Input() projectTitle: string = 'Projeto 1';
-  @Input() deployLink: string = 'https://deploy-link.com';
-  @Input() githubLink: string = 'https://github.com/project1';
   @Input() imageUrl: string = 'img/projects/icon-portfolio.png';
-  @Input() tags: { name: string; color: string }[] = [];
+  @Input() projectTitle: string = 'Projeto 1';
 }

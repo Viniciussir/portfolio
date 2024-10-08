@@ -1,10 +1,14 @@
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    justify-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 0;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project{
+  display: grid;
+  padding: 50px 0;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
