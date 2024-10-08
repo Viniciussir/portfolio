@@ -14,7 +14,7 @@ export class StructuredBoxComponent {
 
   @Input() infoText: string = '';
   @Input() verticalText: string = '';
-  @Input() infoLineHorizontal: boolean = true;
+  @Input() direction: 'left' | 'right' = 'right';
 
   public isVisible = false;
 

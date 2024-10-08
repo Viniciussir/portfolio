@@ -1,6 +1,7 @@
 <div class="projects-container">
 
   <div class="project">
+
     <app-project-card
       [projectTitle]="projectTitle1"
       [imageUrl]="'img/projects/icon-portfolio.png'">
@@ -16,6 +17,24 @@
   </div>
 
   <div class="project">
+
+    <app-project-info
+      [projectTitle]="projectTitle1"
+      [projectDescription]="projectDescription1"
+      [deployLink]="deployLink1"
+      [githubLink]="githubLink1"
+      [tags]="tags1">
+    </app-project-info>
+    
+    <app-project-card
+      [projectTitle]="projectTitle1"
+      [imageUrl]="'img/projects/icon-portfolio.png'">
+    </app-project-card>
+
+  </div>
+
+  <div class="project">
+
     <app-project-card
       [projectTitle]="projectTitle1"
       [imageUrl]="'img/projects/icon-portfolio.png'">
@@ -28,8 +47,8 @@
       [githubLink]="githubLink1"
       [tags]="tags1">
     </app-project-info>
-  </div>
 
+  </div>
 
 </div>
   

@@ -1,23 +1,14 @@
-<div *ngIf="infoLineHorizontal" class="content-container-right" [ngClass]="{'visible': isVisible}">
+<div [ngClass]="{'visible': isVisible, 'content-container-right': direction === 'right', 'content-container-left': direction === 'left'}">
     <div class="info-box">
-        <div class="info-text-right">
-            <span class="infoText"> {{ infoText }} </span>
-        </div>
-        <span class="vertical-text"> {{ verticalText }} </span>
-        <div class="line-container">
+        <div class="line-container" *ngIf="direction === 'right'">
             <div class="horizontal-line"></div>
         </div>
-    </div>
-</div>
-
-<div *ngIf="!infoLineHorizontal" class="content-container-left" [ngClass]="{'visible': isVisible}">
-    <div class="info-box">
-        <div class="line-container">
-            <div class="horizontal-line"></div>
+        <span class="vertical-text">{{ verticalText }}</span>
+        <div [ngClass]="{'info-text-right': direction === 'right', 'info-text-left': direction === 'left'}">
+            <span class="infoText">{{ infoText }}</span>
         </div>
-        <span class="vertical-text"> {{ verticalText }} </span>
-        <div class="info-text-left">
-            <span class="infoText"> {{ infoText }} </span>
+        <div class="line-container" *ngIf="direction === 'left'">
+            <div class="horizontal-line"></div>
         </div>
     </div>
 </div>
