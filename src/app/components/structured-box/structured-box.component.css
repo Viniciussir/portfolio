@@ -41,7 +41,7 @@
   justify-content: center;
   width: 400px;
   height: 150px;
-  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
 .info-text-left {
@@ -51,7 +51,7 @@
   justify-content: center;
   width: 400px;
   height: 150px;
-  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .infoText{

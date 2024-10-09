@@ -3,10 +3,11 @@
         <div class="line-container" *ngIf="direction === 'right'">
             <div class="horizontal-line"></div>
         </div>
-        <span class="vertical-text">{{ verticalText }}</span>
+        <span class="vertical-text" *ngIf="direction === 'right'">{{ verticalText }}</span>
         <div [ngClass]="{'info-text-right': direction === 'right', 'info-text-left': direction === 'left'}">
             <span class="infoText">{{ infoText }}</span>
         </div>
+        <span class="vertical-text" *ngIf="direction === 'left'">{{ verticalText }}</span>
         <div class="line-container" *ngIf="direction === 'left'">
             <div class="horizontal-line"></div>
         </div>
