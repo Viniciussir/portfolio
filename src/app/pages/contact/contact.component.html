@@ -1,24 +1,3 @@
-<section class="contact-section">
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <label for="name">Name:</label>
-    <input id="name" formControlName="name" placeholder="Your Name" required>
-    <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
-      Name is required
-    </div>
-
-    <label for="email">Email:</label>
-    <input id="email" formControlName="email" placeholder="Your Email" required>
-    <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-      A valid email is required
-    </div>
-
-    <label for="message">Message:</label>
-    <textarea id="message" formControlName="message" placeholder="Your Message" required></textarea>
-    <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
-      Message is required
-    </div>
-
-    <button type="submit" [disabled]="contactForm.invalid">Send</button>
-  </form>
-</section>
+<app-contact-form>
   
+</app-contact-form>
