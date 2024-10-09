@@ -1,4 +1,8 @@
-.contact-container {
+.container {
+    background-color: #eeeeee;
+}
+
+.contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 0;
