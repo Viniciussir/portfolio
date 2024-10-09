@@ -15,4 +15,13 @@ export class ContactBoxComponent {
   @Input() contactDescription!: string;
   @Input() contactImg!: string;
   @Input() borderColor: string = '#003366'; 
+
+  copyContactDescription() {
+    navigator.clipboard.writeText(this.contactDescription).then(() => {
+      alert('Texto copiado para a área de transferência!');
+    }).catch(err => {
+      console.error('Erro ao copiar texto: ', err);
+    });
+  }
+
 }
