@@ -1,18 +1,26 @@
 <div class="contact-details">
-    <h3>Contact Information</h3>
-    <ul>
-      <li>
-        <strong>Celular:</strong> <a href="tel:+123456789">+123 456 789</a>
-      </li>
-      <li>
-        <strong>Email:</strong> <a href="mailto:your.email&#64;example.com">your.email&#64;example.com</a>
-      </li>      
-      <li>
-        <strong>Address:</strong> 123 Main Street, City, Country
-      </li>
-      <li>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
-      </li>
-    </ul>
+
+  <app-contact-box
+    [contactName]="'Whatsapp'"
+    [contactDescription]="'+5513981006977'"
+    [contactImg]="'img/contact/icon-whatsapp.png'"
+    [borderColor]="'#25D366'">
+  </app-contact-box>
+
+  <app-contact-box
+    [contactName]="'Celular'"
+    [contactImg]="'img/icon-angular.png'">
+  </app-contact-box>
+
+  <app-contact-box
+    [contactName]="'Celular'"
+    [contactImg]="'img/icon-angular.png'">
+  </app-contact-box>
+
+  <app-contact-box
+    [contactName]="'Celular'"
+    [contactImg]="'img/icon-angular.png'">
+  </app-contact-box>
+
 </div>
   
