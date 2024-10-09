@@ -1,24 +1,40 @@
 <section class="contact-section">
+  <h3>Entre em Contato</h3>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <label for="name">Name:</label>
-    <input id="name" formControlName="name" placeholder="Your Name" required>
-    <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
-      Name is required
+    
+    <div class="content">
+      <label for="name">Nome:</label>
+      <input id="name" formControlName="name" placeholder="Informe seu Nome" required>
+      <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
+        Nome é obrigatório
+      </div>
     </div>
 
-    <label for="email">Email:</label>
-    <input id="email" formControlName="email" placeholder="Your Email" required>
-    <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-      A valid email is required
+    <div class="content">
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" placeholder="Informe seu Email" required>
+      <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+        É necessário um e-mail válido
+      </div>
+    </div>
+ 
+    <div class="content">
+      <label for="subject">Assunto:</label>
+      <input id="subject" formControlName="subject" placeholder="Informe o Assunto" required>
+      <div *ngIf="contactForm.controls['subject'].invalid && contactForm.controls['subject'].touched">
+        Assunto é obrigatório
+      </div>
     </div>
 
-    <label for="message">Message:</label>
-    <textarea id="message" formControlName="message" placeholder="Your Message" required></textarea>
-    <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
-      Message is required
+    <div class="content">
+      <label for="message">Mensagem:</label>
+      <textarea id="message" formControlName="message" placeholder="Informe sua Mensagem" required></textarea>
+      <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
+        Mensagem é necessária
+      </div>
     </div>
+    
+    <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
 
-    <button type="submit" [disabled]="contactForm.invalid">Send</button>
   </form>
 </section>
-    
