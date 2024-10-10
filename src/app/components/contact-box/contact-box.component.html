@@ -1,6 +1,9 @@
-<div class="contact-box" [ngStyle]="{ 'border-color': borderColor }" (click)="copyContactDescription()">
-    <img src="{{ contactImg }}" alt="{{ contactName }} logo" />
-    <p>{{ contactName }}</p>
-    <label>{{ contactDescription }}</label>
+<div 
+    class="contact-box" 
+    [ngStyle]="{ 'border-color': borderColor }" 
+    (click)="copyContactDescription()"  
+    [attr.title]="'Clique para copiar o ' + contactName">
+        <img src="{{ contactImg }}" alt="{{ contactName }} logo" />
+        <p>{{ contactName }}</p>
+        <label>{{ contactDescription }}</label>
 </div>
-  
