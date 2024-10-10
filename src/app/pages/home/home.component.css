@@ -54,12 +54,12 @@
     font-family: monospace;
     font-size: 40px;
     border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 25ch;
+    width: 22ch;
     white-space: nowrap;
     overflow: hidden;
     color: var(--color-secondary);
     opacity: 0;
-    animation: fadeIn 0.5s 3.5s forwards, typing3 2.5s steps(25, end) 3.5s forwards, hideCursor3 0.25s 6s forwards; 
+    animation: fadeIn 0.5s 3.5s forwards, typing3 2.5s steps(22, end) 3.5s forwards, hideCursor3 0.25s 6s forwards; 
 }
   
 .download-cv {

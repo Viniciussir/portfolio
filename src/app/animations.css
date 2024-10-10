@@ -10,7 +10,7 @@
 
 @keyframes typing3 {
     from { width: 0; }
-    to { width: 25ch; }
+    to { width: 22ch; }
 }
 
 @keyframes hideCursor1 {
