@@ -21,5 +21,11 @@
     display: block;
 }
 
+@media (max-width: 480px) {
+    .project-container {
+        max-width: 250px;
+    }
+}
+
 
   

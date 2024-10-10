@@ -76,3 +76,10 @@ label {
   color: #000000;
   transform: translateY(-2px);
 }
+
+@media (max-width: 480px) {
+  .project-info {
+    max-width: 250px; 
+    aspect-ratio: 0;
+  }
+}
