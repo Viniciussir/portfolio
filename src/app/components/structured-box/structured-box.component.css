@@ -81,3 +81,126 @@
   height: 5px;
   background-color: black;
 }
+
+@media (max-width: 1024px) {
+  .info-box {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .info-text-right,
+  .info-text-left {
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 120px;
+  }
+
+  .vertical-text {
+    font-size: 80px;
+    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+  }
+
+  .line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; 
+    height: 300px; 
+  }
+
+  .horizontal-line {
+    width: 5px; 
+    height: 300px; 
+    background-color: black;
+  }
+
+  .infoText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .info-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info-text-right,
+  .info-text-left {
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    width: 250px;
+    height: 100px;
+  }
+
+  .vertical-text {
+    font-size: 60px;
+    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+  }
+
+  .line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    height: 250px;
+  }
+
+  .horizontal-line {
+    width: 5px; 
+    height: 250px; 
+    background-color: black;
+  }
+
+  .infoText {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-text-right,
+  .info-text-left {
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+    height: 80px;
+  }
+
+  .vertical-text {
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+  }
+
+  .line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 200px;
+  }
+
+  .horizontal-line {
+    width: 5px; 
+    height: 200px; 
+    background-color: black;
+  }
+
+  .infoText {
+    font-size: 14px;
+    text-align: center;
+  }
+}

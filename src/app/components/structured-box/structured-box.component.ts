@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, Input, input } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-structured-box',
@@ -10,7 +10,7 @@ import { Component, ElementRef, HostListener, Input, input } from '@angular/core
   templateUrl: './structured-box.component.html',
   styleUrl: './structured-box.component.css'
 })
-export class StructuredBoxComponent {
+export class StructuredBoxComponent implements OnInit {
 
   @Input() infoText: string = '';
   @Input() verticalText: string = '';
@@ -18,7 +18,13 @@ export class StructuredBoxComponent {
 
   public isVisible = false;
 
+  isMobile: boolean = false;
+
   constructor(private el: ElementRef) {}
+
+  ngOnInit() {
+    this.checkIfMobile(window.innerWidth);
+  }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
@@ -29,6 +35,18 @@ export class StructuredBoxComponent {
       this.isVisible = true;
     } else {
       this.isVisible = false;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkIfMobile(event.target.innerWidth);
+  }
+
+  private checkIfMobile(width: number) {
+    this.isMobile = width < 1024; 
+    if (this.isMobile) {
+      this.direction = 'right';
     }
   }
 }
