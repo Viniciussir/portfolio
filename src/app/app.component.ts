@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 import { VerticalSpacerComponent } from './components/vertical-spacer/vertical-spacer.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -21,11 +22,16 @@ import { VerticalSpacerComponent } from './components/vertical-spacer/vertical-s
     ContactComponent,
     ProjectsComponent,
     MaintenanceComponent,
-    VerticalSpacerComponent
+    VerticalSpacerComponent,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+  isUnderMaintenance: boolean = true; 
+
+  handleCloseMaintenance() {
+    this.isUnderMaintenance = false;
+  }
 }

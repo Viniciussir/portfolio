@@ -1,7 +1,8 @@
-<div class="maintenance-container">
-    <h1>Site em Manutenção</h1>
-    <div class="acess-github">
-        <p>Acesse o GitHub</p>
+<div class="maintenance-overlay">
+    <div class="maintenance-container">
+        <h1>Site em Manutenção</h1>
+        <label>Seja gentil com os bugs encontrados e aguarde o lançamento oficial.</label>
+        <label>Verique meu GitHub.</label>
         <a href="https://github.com/Viniciussir" target="_blank" rel="noopener noreferrer">
             <app-skill-box
                 skillName="GitHub"
@@ -9,6 +10,7 @@
                 borderColor="#040404">
             </app-skill-box>
         </a>
+        <button class="access-button" (click)="closeMaintenance()">Acessar o Site</button>
     </div>
-  </div>
+</div>
   

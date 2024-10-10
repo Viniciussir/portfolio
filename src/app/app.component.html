@@ -1,39 +1,39 @@
+<app-maintenance *ngIf="isUnderMaintenance" (close)="handleCloseMaintenance()"></app-maintenance>
+
 <app-header></app-header>
 
-  <section id="home">
-    <app-home></app-home>
-  </section>
+<section id="home">
+  <app-home></app-home>
+</section>
 
-  <app-vertical-spacer
-    [verticaltext]="'Sobre min'"
-    [firstColorGradient]="'#ffffff'"
-    [secondColorGradient]="'#eeeeee'">
-  </app-vertical-spacer>
+<app-vertical-spacer
+  [verticaltext]="'Sobre min'"
+  [firstColorGradient]="'#ffffff'"
+  [secondColorGradient]="'#eeeeee'">
+</app-vertical-spacer>
 
-  <section id="about">
-    <app-about></app-about>
-  </section>
+<section id="about">
+  <app-about></app-about>
+</section>
 
-  <app-vertical-spacer
-    [verticaltext]="'Projetos recentes'"
-    [firstColorGradient]="'#eeeeee'"
-    [secondColorGradient]="'#ffffff'">>
-  </app-vertical-spacer>
+<app-vertical-spacer
+  [verticaltext]="'Projetos recentes'"
+  [firstColorGradient]="'#eeeeee'"
+  [secondColorGradient]="'#ffffff'">
+</app-vertical-spacer>
 
-  <section id="projects">
-    <app-projects></app-projects>
-  </section>
+<section id="projects">
+  <app-projects></app-projects>
+</section>
 
-  <app-vertical-spacer
-    [verticaltext]="'Contato'"
-    [firstColorGradient]="'#ffffff'"
-    [secondColorGradient]="'#eeeeee'">
-  </app-vertical-spacer>
+<app-vertical-spacer
+  [verticaltext]="'Contato'"
+  [firstColorGradient]="'#ffffff'"
+  [secondColorGradient]="'#eeeeee'">
+</app-vertical-spacer>
 
-  <section id="contact">
-    <app-contact></app-contact>
-  </section>
+<section id="contact">
+  <app-contact></app-contact>
+</section>
 
 <app-footer></app-footer>
-
-<!-- <app-maintenance></app-maintenance> -->

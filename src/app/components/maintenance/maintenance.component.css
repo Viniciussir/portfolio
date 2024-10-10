@@ -1,81 +1,43 @@
+.maintenance-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
 .maintenance-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto; 
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   text-align: center;
-  background-color: #ffffff;
   color: #000000;
-
-  h1 {
-    display: inline-block;
-    font-family: monospace;
-    font-size: 40px;
-    border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 19ch;
-    white-space: nowrap;
-    color: #000000;
-    overflow: hidden;
-    animation: typing1 2s steps(20, end), hideCursor1 0.25s 2s forwards;
-
-    @media (max-width: 900px) {
-      font-size: 30px;
-    }
-  }
+  gap: 10px;
 }
 
-.acess-github{
-  display: grid;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    display: inline-block;
-    font-family: monospace;
-    font-size: 35px;
-    border-right: 4px solid rgba(0, 0, 0, 0.75);
-    width: 16ch;
-    white-space: nowrap;
-    overflow: hidden;
-    opacity: 0;
-    color: #000000;
-    animation: fadeIn 0.5s 2.25s forwards, typing2 2s steps(20, end) 2.25s forwards, hideCursor2 0.25s 4.25s forwards;
-
-    @media (max-width: 900px) {
-      font-size: 25px;
-    }
-  }
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-  }
+.access-button {
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  color: #ffffff; 
+  background-color: #000000; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
 }
 
-@keyframes typing1 {
-  from { width: 0; }
-  to { width: 19ch; }
-}
-
-@keyframes hideCursor1 {
-  from { border-right-color: rgba(0, 0, 0, 0.75); }
-  to { border-right-color: transparent; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes typing2 {
-  from { width: 0; }
-  to { width: 16ch; }
-}
-
-@keyframes hideCursor2 {
-  from { border-right-color: rgba(0, 0, 0, 0.75); }
-  to { border-right-color: transparent; }
+.access-button:hover {
+  background-color: #0056b3; 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { SkillBoxComponent } from "../skill-box/skill-box.component";
 
 @Component({
@@ -11,5 +11,10 @@ import { SkillBoxComponent } from "../skill-box/skill-box.component";
   styleUrl: './maintenance.component.css'
 })
 export class MaintenanceComponent {
+   
+  @Output() close: EventEmitter<void> = new EventEmitter();
 
+  closeMaintenance() {
+    this.close.emit();
+  }
 }
