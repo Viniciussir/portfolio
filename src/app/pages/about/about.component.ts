@@ -18,19 +18,24 @@ import { VerticalSpacerComponent } from '../../components/vertical-spacer/vertic
 })
 export class AboutComponent {
 
-  infoTextOne: string = 'Vinicius Coelho Scampini';
+  infoTitleOne: string = 'Nome | Idade';
+  infoTextOne: string = 'Vinicius Coelho Scampini | 24 Anos';
   verticalTextOne: string = '1';
 
-  infoTextTwo: string = 'Frontend | Angular | React | TypeScript';
+  infoTitleTwo: string = 'Tecnologias Frontend';
+  infoTextTwo: string = 'Angular | React | TypeScript | Javascript';
   verticalTextTwo: string = '2';
 
-  infoTextThree: string = 'Backend | Nest.js | Node.js';
+  infoTitleThree: string = 'Tecnologias Backend';
+  infoTextThree: string = 'Nest.js | Node.js';
   verticalTextThree: string = '3';
 
-  infoTextFour:  string = 'Banco de Dados | PostgreSQL | Prisma';
+  infoTitleFour:  string = 'Banco de Dados';
+  infoTextFour:  string = 'PostgreSQL | Prisma';
   verticalTextFour: string = '4';
 
-  infoTextFive: string = 'Infraestrutura | AWS (EC2, RDS, S3)';
+  infoTitleFive: string = 'Infraestrutura';
+  infoTextFive: string = 'AWS | Cloud';
   verticalTextFive: string = '5';
 
   infoTextSix: string = 'Pós-Graduação Eng. Software - PUC';

@@ -5,6 +5,7 @@
         </div>
         <span class="vertical-text" *ngIf="direction === 'right'">{{ verticalText }}</span>
         <div [ngClass]="{'info-text-right': direction === 'right', 'info-text-left': direction === 'left'}">
+            <span class="infoTitle">{{ infoTitle }}</span>
             <span class="infoText">{{ infoText }}</span>
         </div>
         <span class="vertical-text" *ngIf="direction === 'left'">{{ verticalText }}</span>

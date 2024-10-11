@@ -12,6 +12,7 @@ import { Component, ElementRef, HostListener, Input, input, OnInit } from '@angu
 })
 export class StructuredBoxComponent implements OnInit {
 
+  @Input() infoTitle: string = '';
   @Input() infoText: string = '';
   @Input() verticalText: string = '';
   @Input() direction: 'left' | 'right' = 'right';
