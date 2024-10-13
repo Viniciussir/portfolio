@@ -1,0 +1,28 @@
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 5px 10px black;
+    width: 400px;   
+    gap: 20px;
+}
+
+.item-experience {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
+    border: 2px solid black;
+}
+
+.priority {
+    font-size: 20px;
+}
