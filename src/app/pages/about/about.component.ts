@@ -38,9 +38,9 @@ export class AboutComponent {
   infoTextFive: string = 'AWS | Cloud';
   verticalTextFive: string = '5';
 
-  infoTextSix: string = 'Pós-Graduação Eng. Software - PUC';
-  verticalTextSix: string = '6';
+  // infoTextSix: string = 'Pós-Graduação Eng. Software - PUC';
+  // verticalTextSix: string = '6';
 
-  infoTextSeven: string = 'Bacharel em Eng. Computação - São Judas';
-  verticalTextSeven: string = '7';
+  // infoTextSeven: string = 'Bacharel em Eng. Computação - São Judas';
+  // verticalTextSeven: string = '7';
 }
