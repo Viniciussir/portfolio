@@ -1,11 +1,12 @@
 .projects-container {
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 .project{
   display: grid;
   padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
