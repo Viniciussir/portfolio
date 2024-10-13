@@ -9,6 +9,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 import { VerticalSpacerComponent } from './components/vertical-spacer/vertical-spacer.component';
 import { CommonModule } from '@angular/common';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 @Component({
   selector: 'app-root',
@@ -23,13 +24,14 @@ import { CommonModule } from '@angular/common';
     ProjectsComponent,
     MaintenanceComponent,
     VerticalSpacerComponent,
-    CommonModule
+    CommonModule,
+    ExperienceComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  isUnderMaintenance: boolean = true; 
+  isUnderMaintenance: boolean = false; 
 
   handleCloseMaintenance() {
     this.isUnderMaintenance = false;
