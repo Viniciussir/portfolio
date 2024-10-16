@@ -24,7 +24,6 @@ export class StructuredBoxComponent implements OnInit {
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
-    this.checkIfMobile(window.innerWidth);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -36,18 +35,6 @@ export class StructuredBoxComponent implements OnInit {
       this.isVisible = true;
     } else {
       this.isVisible = false;
-    }
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.checkIfMobile(event.target.innerWidth);
-  }
-
-  private checkIfMobile(width: number) {
-    this.isMobile = width < 1024; 
-    if (this.isMobile) {
-      this.direction = 'right';
     }
   }
 }
