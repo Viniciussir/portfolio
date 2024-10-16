@@ -14,6 +14,7 @@
   font-size: 28px; 
   color: #003366; 
   margin-bottom: 20px;
+  text-align: center;
 }
 
 form {
@@ -51,7 +52,6 @@ textarea::placeholder {
   font-family: 'Arial', sans-serif;
 }
 
-
 input:focus, textarea:focus {
   border-color: #003366; 
   outline: none;
@@ -77,4 +77,29 @@ button:hover {
 button:disabled {
   background-color: #ccc; 
   cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .contact-section {
+    width: 300px;
+  }
+
+  .contact-section h3 {
+    font-size: 20px;
+  }
+
+  input, textarea {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-section {
+    width: 250px;
+  }
 }
