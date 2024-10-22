@@ -1,6 +1,6 @@
 <div class="experience">
 
-  <section class="content">
+  <section class="content" [class.visible]="isVisible">
     <h1>Experiências</h1>
     <app-experience-item 
       *ngFor="let exp of experiences" 
@@ -11,7 +11,7 @@
     </app-experience-item>
   </section>
 
-  <section class="content">
+  <section class="content" [class.visible]="isVisible">
     <h1>Formação</h1>
     <app-experience-item 
       *ngFor="let edu of education" 

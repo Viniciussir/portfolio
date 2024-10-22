@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { ExperienceItemComponent } from '../../components/experience-item/experience-item.component';
 
 @Component({
@@ -30,5 +30,25 @@ export class ExperienceComponent {
     { date: '2024 | 85 Horas', degree: 'Angular: crie aplicações web ágeis', school: 'Alura', courseType: '| Formação Angular' },
     { date: '2024 | 64 Horas', degree: 'Explore o Framework Angular', school: 'Alura', courseType: '| Formação Angular' }
   ]
-  
+  isVisible = false;
+
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      this.isVisible = true;
+      this.renderer.addClass(this.el.nativeElement, 'visible'); 
+    } else {
+      this.isVisible = false;
+      this.renderer.removeClass(this.el.nativeElement, 'visible');
+    }
+  }
+
+  ngAfterViewInit() {
+    this.onScroll();
+  }
 }
