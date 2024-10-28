@@ -13,9 +13,7 @@ import { Component, ElementRef, HostListener, Input, input, OnInit } from '@angu
 export class AboutInfoBoxComponent implements OnInit {
 
   @Input() infoTitle: string = '';
-  @Input() infoText: string = '';
-  @Input() infoOptional?: string = '';
-  @Input() marginOptional?: string = '';
+  @Input() infoText: string[] = [];
   @Input() verticalText: string = '';
   @Input() direction: 'left' | 'right' = 'right';
 

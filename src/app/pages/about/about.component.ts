@@ -19,25 +19,23 @@ import { AboutInfoBoxComponent } from '../../components/about-info-box/about-inf
 export class AboutComponent {
 
   infoTitleOne: string = 'Nome | Idade';
-  infoTextOne: string = 'Vinicius Coelho Scampini | 24 Anos';
+  infoTextOne: string [] = ['Vinicius Coelho Scampini', '24 Anos'];
   verticalTextOne: string = '1';
   
   infoTitleTwo: string = 'Tecnologias Frontend';
-  infoTextTwo: string = 'Angular | TypeScript | HTML | CSS | Bootstrap';
+  infoTextTwo: string[] = ['Angular', 'TypeScript', 'HTML', 'CSS', 'Bootstrap'];
   verticalTextTwo: string = '2';
   
-  infoTitleThree: string = 'Ferramentas e DevOps';
-  infoTextThree: string = 'Git | CI/CD (Jenkins)';
+  infoTitleThree: string = 'Ferramentas | DevOps';
+  infoTextThree: string[] = ['Git', 'CI/CD (Jenkins)'];
   verticalTextThree: string = '3';
   
-  infoTitleFour: string = 'Metodologias e Testes';
-  infoTextFour: string = 'Metodologias Ágeis | Testes Unitários';
-  infoOpcionalFour: string = 'Scrum | Jasmine';
-  marginOptionalFour: string = '45px';
+  infoTitleFour: string = 'Metodologias | Testes';
+  infoTextFour: string[] = ['Metodologias Ágeis', 'Testes Unitários'];
   verticalTextFour: string = '4'
   
   infoTitleFive: string = 'Tecnologias Backend';
-  infoTextFive: string = 'Nest.js | Node.js';
+  infoTextFive: string[] = ['Nest.js', 'Node.js'];
   verticalTextFive: string = '5';
   
   infoTitleSix: string = 'Banco de Dados';
