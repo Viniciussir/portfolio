@@ -31,8 +31,10 @@ export class AboutComponent {
   verticalTextThree: string = '3';
   
   infoTitleFour: string = 'Metodologias e Testes';
-  infoTextFour: string = 'Testes Automatizados | Metodologias Ágeis';
-  verticalTextFour: string = '4';
+  infoTextFour: string = 'Metodologias Ágeis | Testes Unitários';
+  infoOpcionalFour: string = 'Scrum | Jasmine';
+  marginOptionalFour: string = '45px';
+  verticalTextFour: string = '4'
   
   infoTitleFive: string = 'Tecnologias Backend';
   infoTextFive: string = 'Nest.js | Node.js';
@@ -45,6 +47,5 @@ export class AboutComponent {
   infoTitleSeven: string = 'Infraestrutura';
   infoTextSeven: string = 'AWS | Cloud';
   verticalTextSeven: string = '7';
-  
   
 }

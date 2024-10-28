@@ -14,6 +14,8 @@ export class StructuredBoxComponent implements OnInit {
 
   @Input() infoTitle: string = '';
   @Input() infoText: string = '';
+  @Input() infoOptional?: string = '';
+  @Input() marginOptional?: string = '';
   @Input() verticalText: string = '';
   @Input() direction: 'left' | 'right' = 'right';
 
