@@ -2,15 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, Input, input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-structured-box',
+  selector: 'app-about-info-box',
   standalone: true,
   imports: [
     CommonModule
   ],
-  templateUrl: './structured-box.component.html',
-  styleUrl: './structured-box.component.css'
+  templateUrl: './about-info-box.component.html',
+  styleUrl: './about-info-box.component.css'
 })
-export class StructuredBoxComponent implements OnInit {
+export class AboutInfoBoxComponent implements OnInit {
 
   @Input() infoTitle: string = '';
   @Input() infoText: string = '';

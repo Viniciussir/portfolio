@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StructuredBoxComponent } from './structured-box.component';
+import { AboutInfoBoxComponent } from './about-info-box.component';
 
 describe('StructuredBoxComponent', () => {
-  let component: StructuredBoxComponent;
-  let fixture: ComponentFixture<StructuredBoxComponent>;
+  let component: AboutInfoBoxComponent;
+  let fixture: ComponentFixture<AboutInfoBoxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StructuredBoxComponent]
+      imports: [AboutInfoBoxComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StructuredBoxComponent);
+    fixture = TestBed.createComponent(AboutInfoBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

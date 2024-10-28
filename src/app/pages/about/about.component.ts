@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SkillBoxComponent } from '../../components/skill-box/skill-box.component';
-import { StructuredBoxComponent } from "../../components/structured-box/structured-box.component";
 import { VerticalSpacerComponent } from '../../components/vertical-spacer/vertical-spacer.component';
+import { AboutInfoBoxComponent } from '../../components/about-info-box/about-info-box.component';
 
 @Component({
   selector: 'app-about',
@@ -10,8 +10,8 @@ import { VerticalSpacerComponent } from '../../components/vertical-spacer/vertic
   imports: [
     CommonModule,
     SkillBoxComponent,
-    StructuredBoxComponent,
-    VerticalSpacerComponent
+    VerticalSpacerComponent,
+    AboutInfoBoxComponent
 ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'

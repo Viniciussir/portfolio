@@ -1,0 +1,15 @@
+<div [ngClass]="{'about-info-box--visible': isVisible, 'about-info-box--right': direction === 'right', 'about-info-box--left': direction === 'left'}" class="about-info-box">
+    <div class="about-info-box__line-container" *ngIf="direction === 'right'">
+        <div class="about-info-box__horizontal-line"></div>
+    </div>
+    <span class="about-info-box__vertical-text" *ngIf="direction === 'right'">{{ verticalText }}</span>
+    <div [ngClass]="{'about-info-box__text--right': direction === 'right', 'about-info-box__text--left': direction === 'left'}" class="about-info-box__text">
+        <span class="about-info-box__title">{{ infoTitle }}</span>
+        <span class="about-info-box__text-content">{{ infoText }}</span>
+        <span class="about-info-box__optional" [ngStyle]="{'margin-left': marginOptional}">{{ infoOptional }}</span>              
+    </div>
+    <span class="about-info-box__vertical-text" *ngIf="direction === 'left'">{{ verticalText }}</span>
+    <div class="about-info-box__line-container" *ngIf="direction === 'left'">
+        <div class="about-info-box__horizontal-line"></div>
+    </div>
+</div>
