@@ -7,22 +7,6 @@
   align-items: flex-start; 
   gap: 30px;
 }
-
-@media (max-width: 1400px) {
-  .experience {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; 
-    align-content: center;
-  }
-}
-
-@media (max-width: 900px) {
-  .experience {
-    grid-template-columns: 1fr; 
-    justify-content: center;
-    align-content: center;
-  }
-}
   
 .content {
   display: flex;
@@ -48,3 +32,11 @@ h1 {
   margin-bottom: 10px;
 }
   
+@media (max-width: 975px) {
+  .experience {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 420px;
+  }
+}
