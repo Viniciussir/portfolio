@@ -1,55 +1,54 @@
-<header>
+<header class="header">
 
-  <div class="home">
+  <div class="header__home">
 
-    <button class="icon-button" (click)="toggleMenu()">
+    <button class="header__icon-button" (click)="toggleMenu()">
       <img src="img/header/icon-home.png" alt="Home Icon">
     </button>
   
-    <span class="vertical-text gap"> 
-      <img src="img/header\icon-code-white-vertical.png" alt="Home Icon">
+    <span class="header__vertical-text header__vertical-text--gap"> 
+      <img src="img/header/icon-code-white-vertical.png" alt="Code Icon">
       <span>Vinicius.dev</span>
     </span>
     
-    <span class="vertical-text">{{ currentDate | date: 'dd/MM' }}</span>
+    <span class="header__vertical-text">{{ currentDate | date: 'dd/MM' }}</span>
 
-    <div class="hiperlink">
+    <div class="header__links">
       <a href="https://github.com/Viniciussir" target="_blank" rel="noopener noreferrer">
-        <img src="img/header\icon-github.png" alt="github icon">
+        <img src="img/header/icon-github.png" alt="GitHub Icon">
       </a>
   
       <a href="https://www.linkedin.com/in/viniciusscampini/" target="_blank" rel="noopener noreferrer">
-        <img src="img/header\icon-linkedin.png" alt="linkedin icon">
+        <img src="img/header/icon-linkedin.png" alt="LinkedIn Icon">
       </a>
     </div>
 
   </div>
 
-  <div class="menu" [class.active]="menuOpen" #menu>
+  <div class="header__menu" [class.active]="menuOpen" #header__menu>
 
-    <a>
-      <img src="img/header\icon-about.png" alt="Sobre Icon">
+    <a class="header__menu-item">
+      <img src="img/header/icon-about.png" alt="Sobre Icon">
       <span>Sobre</span>
     </a>
-    <a>
-      <img src="img/header\icon-project.png" alt="Projetos Icon">
+    <a class="header__menu-item">
+      <img src="img/header/icon-project.png" alt="Projetos Icon">
       <span>Projetos</span>
     </a>  
-    <a>
-      <img src="img/header\icon-contact.png" alt="Contato Icon">
+    <a class="header__menu-item">
+      <img src="img/header/icon-contact.png" alt="Contato Icon">
       <span>Contato</span>
     </a>
-    <div class="identity">
-      <img src="img/header\icon-code-white.png" alt="Home Icon">
+    <div class="header__identity">
+      <img src="img/header/icon-code-white.png" alt="Code Icon">
       <span>Vinicius.dev</span>
     </div>
     
   </div>
 
-  <div class="site-identity" [ngClass]="{'hidden': menuOpen}">
-    <img src="img/header\icon-code-black.png" alt="Home Icon">
+  <div class="header__site-identity" [ngClass]="{'header__site-identity--hidden': menuOpen}">
+    <img src="img/header/icon-code-black.png" alt="Code Icon">
     <span>Vinicius.dev</span>
   </div>
 
 </header>
-  

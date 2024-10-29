@@ -31,7 +31,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  isUnderMaintenance: boolean = true; 
+  isUnderMaintenance: boolean = false; 
 
   handleCloseMaintenance() {
     this.isUnderMaintenance = false;
