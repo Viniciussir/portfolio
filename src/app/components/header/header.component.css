@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 0;
+    margin-bottom: 1rem;
     flex-grow: 1;
 }
 
@@ -103,6 +104,9 @@
     .header {
         width: 2.5rem;
     }
+    .header__home {
+        margin-bottom: 3rem;
+    }
     .header__menu {
         left: 2.5rem;
     }
@@ -117,6 +121,9 @@
 @media (max-width: 426px) {
     .header {
         width: 1.875rem; 
+    }
+    .header__home {
+        margin-bottom: 4rem;
     }
     .header__menu {
         justify-content: center;
