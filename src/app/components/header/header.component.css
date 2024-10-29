@@ -58,17 +58,16 @@
     justify-content: space-evenly;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 3.75rem;
     overflow: hidden;
     width: 0;
     height: 50px;
     background-color: var(--color-secondary);
-    gap: 15px;
     transition: all 0.5s ease-in-out;
 }
 
 .header__menu.active {
-   width: 100vw;
+    width: calc(100vw - 3.75rem);
 }
 
 .header__menu-item,
@@ -104,10 +103,30 @@
     .header {
         width: 2.5rem;
     }
+    .header__menu {
+        left: 2.5rem;
+    }
+    .header__menu.active {
+        width: calc(100vw - 2.5rem);
+    }
+    .header__identity {
+        display: none;
+    }
 }
 
 @media (max-width: 426px) {
     .header {
         width: 1.875rem; 
+    }
+    .header__menu {
+        justify-content: center;
+        left: 1.875rem;
+        gap: 20px;
+    }
+    .header__menu.active {
+        width: calc(100vw - 1.875rem);
+    }
+    .header__menu-item {
+        font-size: 10px;
     }
 }
