@@ -6,7 +6,7 @@
       <img src="img/header/icon-home.png" alt="Home Icon">
     </button>
   
-    <span class="header__vertical-text header__vertical-text--gap" (click)="navigateTo('home')"> 
+    <span class="header__vertical-text header__vertical-text--gap header__pointer" (click)="navigateTo('home')"> 
       <img src="img/header/icon-code-white-vertical.png" alt="Code Icon">
       <span>Vinicius.dev</span>
     </span>
@@ -48,7 +48,7 @@
     </div>
   </div>  
 
-  <div class="header__site-identity" [ngClass]="{'header__site-identity--hidden': menuOpen}" (click)="navigateTo('home')">
+  <div class="header__site-identity header__pointer" [ngClass]="{'header__site-identity--hidden': menuOpen}" (click)="navigateTo('home')">
     <img src="img/header/icon-code-black.png" alt="Code Icon">
     <span>Vinicius.dev</span>
   </div>
