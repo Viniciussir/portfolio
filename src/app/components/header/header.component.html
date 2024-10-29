@@ -6,7 +6,7 @@
       <img src="img/header/icon-home.png" alt="Home Icon">
     </button>
   
-    <span class="header__vertical-text header__vertical-text--gap"> 
+    <span class="header__vertical-text header__vertical-text--gap" (click)="navigateTo('home')"> 
       <img src="img/header/icon-code-white-vertical.png" alt="Code Icon">
       <span>Vinicius.dev</span>
     </span>
@@ -26,29 +26,27 @@
   </div>
 
   <div class="header__menu" [class.active]="menuOpen" #header__menu>
-
-    <a class="header__menu-item">
-      <img src="img/header/icon-about.png" alt="Sobre Icon">
-      <span>Sobre</span>
+    <a class="header__menu-item" (click)="navigateTo('sobre')">
+        <img src="img/header/icon-about.png" alt="Sobre Icon">
+        <span>Sobre</span>
     </a>
-    <a class="header__menu-item">
-      <img src="img/header/icon-experience.png" alt="Contato Icon">
-      <span>Experiência</span>
+    <a class="header__menu-item" (click)="navigateTo('experiencia')">
+        <img src="img/header/icon-experience.png" alt="Experiência Icon">
+        <span>Experiência</span>
     </a>
-    <a class="header__menu-item">
-      <img src="img/header/icon-project.png" alt="Projetos Icon">
-      <span>Projetos</span>
-    </a>  
-    <a class="header__menu-item">
-      <img src="img/header/icon-contact.png" alt="Contato Icon">
-      <span>Contato</span>
+    <a class="header__menu-item" (click)="navigateTo('projetos')">
+        <img src="img/header/icon-project.png" alt="Projetos Icon">
+        <span>Projetos</span>
     </a>
-    <div class="header__identity">
-      <img src="img/header/icon-code-white.png" alt="Code Icon">
-      <span>Vinicius.dev</span>
+    <a class="header__menu-item" (click)="navigateTo('contato')">
+        <img src="img/header/icon-contact.png" alt="Contato Icon">
+        <span>Contato</span>
+    </a>
+    <div class="header__identity" (click)="navigateTo('home')">
+        <img src="img/header/icon-code-white.png" alt="Code Icon">
+        <span>Vinicius.dev</span>
     </div>
-    
-  </div>
+  </div>  
 
   <div class="header__site-identity" [ngClass]="{'header__site-identity--hidden': menuOpen}">
     <img src="img/header/icon-code-black.png" alt="Code Icon">
