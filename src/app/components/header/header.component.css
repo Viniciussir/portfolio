@@ -129,4 +129,14 @@
     .header__menu-item {
         font-size: 10px;
     }
+    .header__menu-item img {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__menu-item img {
+        display: none;
+    }
 }
