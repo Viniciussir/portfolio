@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -20,7 +20,7 @@ export class HeaderComponent {
 
   currentDate: Date = new Date();
 
-  menuOpen:boolean = false;
+  menuOpen: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -30,10 +30,12 @@ export class HeaderComponent {
 
   @HostListener('document:click', ['$event'])
   clickOutside(event: MouseEvent) {
-    const clickedInside = this.menu.nativeElement.contains(event.target);
-    const clickedOnToggle = (event.target as HTMLElement).closest('.icon-button');
-    if (!clickedInside && this.menuOpen && !clickedOnToggle) {
-      this.menuOpen = false;
+    if (this.menu && this.menu.nativeElement) {
+      const clickedInside = this.menu.nativeElement.contains(event.target);
+      const clickedOnToggle = (event.target as HTMLElement).closest('.icon-button');
+      if (!clickedInside && this.menuOpen && !clickedOnToggle) {
+        this.menuOpen = false;
+      }
     }
   }
 
@@ -43,5 +45,5 @@ export class HeaderComponent {
       this.menuOpen = false;
     }
   }
-
+  
 }
